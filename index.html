@@ -83,6 +83,13 @@ button.card b{display:block;font:800 30px Fraunces,serif;margin:2px 0}
 
 <section id="p-home"><div id="home"></div></section>
 
+<section id="p-teams" hidden>
+<datalist id="roster"></datalist>
+<h3 style="margin-bottom:4px">Not on a team yet</h3><p class="muted" style="margin:0 0 10px">Pick a team and your name moves into that team box.</p><div id="l-unas" class="list" style="margin-bottom:22px"></div>
+<form class="add" id="f-ppl"><input name="name" list="roster" placeholder="Add someone else" required><select name="team" id="sel-team"></select><button class="btn">Add to team</button></form>
+<div class="teams" id="l-teams"></div>
+</section>
+   
 <section id="p-donations" hidden>
 <div class="goal"><div class="row"><div><div class="muted" style="color:var(--ice)">Raised so far</div><div class="big" id="raised"></div></div>
 <div style="text-align:right"><div style="color:var(--ice)">Goal</div><div class="big" style="font-size:30px" id="goalv"></div></div></div>
@@ -106,12 +113,6 @@ button.card b{display:block;font:800 30px Fraunces,serif;margin:2px 0}
 <div id="l-lists"></div>
 </section>
 
-<section id="p-teams" hidden>
-<datalist id="roster"></datalist>
-<h3 style="margin-bottom:4px">Not on a team yet</h3><p class="muted" style="margin:0 0 10px">Pick a team and your name moves into that team box.</p><div id="l-unas" class="list" style="margin-bottom:22px"></div>
-<form class="add" id="f-ppl"><input name="name" list="roster" placeholder="Add someone else" required><select name="team" id="sel-team"></select><button class="btn">Add to team</button></form>
-<div class="teams" id="l-teams"></div>
-</section>
 </div></main>
 
 <script type="module">
